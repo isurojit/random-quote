@@ -1,0 +1,67 @@
+var author = ['Dalai Lama','John Lennon','Stephen King','Mae West','Thomas A. Edison','Albert Einstein','Babe Ruth','Will Smith','Steve Jobs',
+'Seneca','Eleanor Roosevelt','Henry Ford','Ernest Hemingway','Frank Sinatra','Leo Burnett','Soren Kierkegaard','Socrates','Oprah Winfrey',
+'Dolly Parton','Hillary Clinton','Ashton Kutcher',' Kevin Hart','Kobe Bryant','LeBron James','George Clooney','Celine Dion','John F. Kennedy',
+'Elton John','Albert Einstein','Confucius','Helen Keller','Steve Jobs','Forrest Gump','Lao-Tze',' Helen Keller','Deepak Chopra','Lillian Dickson',
+'Wordsworth','Robert Frost','Charles Swindoll','Winston Churchill','Jack Kerouac','Victor Hugo','Marilyn Monroe','Buddha','Dr. Seuss','Mark Twain',
+'Stephen Hawking','Ralph Waldo Emerson','Euripides','Grandma Moses'];
+var quotes = [
+    'The purpose of our lives is to be happy.',
+    'Life is what happens when you’re busy making other plans.',
+    'Get busy living or get busy dying.',
+    'You only live once, but if you do it right, once is enough.',
+    'Many of life’s failures are people who did not realize how close they were to success when they gave up.',
+    'If you want to live a happy life, tie it to a goal, not to people or things.',
+    'Never let the fear of striking out keep you from playing the game.',
+    'Money and success don’t change people; they merely amplify what is already there.',
+    'Your time is limited, so don’t waste it living someone else’s life. Don’t be trapped by dogma – which is living with the results of other people’s thinking.',
+    'Not how long, but how well you have lived is the main thing.',
+    'If life were predictable it would cease to be life, and be without flavor.',
+    'The whole secret of a successful life is to find out what is one’s destiny to do, and then do it.',
+    'In order to write about life first you must live it.',
+    'The big lesson in life, baby, is never be scared of anyone or anything.',
+    'Curiosity about life in all of its aspects, I think, is still the secret of great creative people.',
+    'Life is not a problem to be solved, but a reality to be experienced.',
+    'The unexamined life is not worth living.',
+    'Turn your wounds into wisdom.',
+    'The way I see it, if you want the rainbow, you gotta put up with the rain.',
+    'Do all the good you can, for all the people you can, in all the ways you can, as long as you can.',
+    'Don’t settle for what life gives you; make life better and build something.',
+    'Everybody wants to be famous, but nobody wants to do the work. I live by that. You grind hard so you can play hard. At the end of the day, you put all the work in, and eventually it’ll pay off. It could be in a year, it could be in 30 years. Eventually, your hard work will pay off.',
+    'Everything negative – pressure, challenges – is all an opportunity for me to rise.',
+    'I like criticism. It makes you strong.',
+    'You never really learn much from hearing yourself speak.',
+    'Life imposes things on you that you can’t control, but you still have the choice of how you’re going to live through this.',
+    'Life is never easy. There is work to be done and obligations to be met – obligations to truth, to justice, and to liberty.',
+    'Live for each second without hesitation.',
+    'Life is like riding a bicycle. To keep your balance, you must keep moving.',
+    'Life is really simple, but men insist on making it complicated.',
+    'Life is a succession of lessons which must be lived to be understood.',
+    'Your work is going to fill a large part of your life, and the only way to be truly satisfied is to do what you believe is great work. And the only way to do great work is to love what you do. If you haven’t found it yet, keep looking. Don’t settle. As with all matters of the heart, you’ll know when you find it.',
+    'My mama always said, life is like a box of chocolates. You never know what you’re gonna get.',
+    'Watch your thoughts; they become words. Watch your words; they become actions. Watch your actions; they become habits. Watch your habits; they become character. Watch your character; it becomes your destiny.',
+    'When we do the best we can, we never know what miracle is wrought in our life or the life of another.',
+    'The healthiest response to life is joy.',
+    'Life is like a coin. You can spend it any way you wish, but you only spend it once.',
+    'The best portion of a good man’s life is his little nameless, unencumbered acts of kindness and of love.',
+    'In three words I can sum up everything I’ve learned about life: It goes on.',
+    'Life is ten percent what happens to you and ninety percent how you respond to it.',
+    'Keep calm and carry on.',
+    'Maybe that’s what life is… a wink of the eye and winking stars.',
+    'Life is a flower of which love is the honey.',
+    'Keep smiling, because life is a beautiful thing and there’s so much to smile about',
+    'Health is the greatest gift, contentment the greatest wealth, faithfulness the best relationship.',
+    'You have brains in your head. You have feet in your shoes. You can steer yourself any direction you choose.',
+    'Good friends, good books, and a sleepy conscience: this is the ideal life.',
+    'Life would be tragic if it weren’t funny.',
+    'Live in the sunshine, swim the sea, drink the wild air.',
+    'The greatest pleasure of life is love.',
+    'Life is what we make it, always has been, always will be.'
+];
+
+//applying event listner to generate quotes
+var button= document.querySelector('#btn');
+button.addEventListener('click',function(){
+    var randomNumber = Math.floor(Math.random()*50);
+    document.querySelector('#mainQuote').textContent = quotes[randomNumber];
+    document.querySelector('#author').textContent = '-'+author[randomNumber];
+});

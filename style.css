@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,600&family=Special+Elite&display=swap');
+body{
+    padding: 0;
+    margin: 0;
+    font-family: 'Josefin Sans', sans-serif;
+}
+img{
+    max-width: 100%; 
+    display:block; 
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+}
+#main-box{
+    position: relative;
+    text-align: center;
+    
+}
+#btn{
+    position: absolute;
+    display: block;
+    left: 40%;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    padding: 2%;
+    border-radius: 25px;
+    font-family: 'Special Elite', cursive;
+    font-size: larger;
+    font-weight: 700;
+    cursor: pointer;
+    backface-visibility: hidden;
+    margin-top: 15px;
+}
+#btn:hover{
+    background-color: blue;
+    color: white;
+    transition: all .3s ease-in-out;
+}
+
+#secondary-box{
+    height: auto;
+    width: 60%;
+    text-align: center;
+    display: inline-block;
+    background-color: rgba(27, 0, 63, 0.5);
+    border-radius: 15px;
+    position: relative;
+    top: 130px;
+    color: white;
+}
+
+.inline-element{
+    display: inline;
+    position: relative;
+    top: 85px;
+}
+#author{
+    position: relative;
+    margin-bottom: 100px;
+    top: 90px;
+    font-family: 'Special Elite', cursive;
+    letter-spacing: 3px;
+}
